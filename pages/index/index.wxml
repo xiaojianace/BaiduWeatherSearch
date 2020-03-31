@@ -1,0 +1,5 @@
+<view class="weather"> 
+<input placeholder="请输入城市名" value="{{searchvalue}}" bindinput="bindKeyInput" />
+<button bindtap="search" class="search" >查询</button>
+<text>{{weatherData}}</text> 
+</view>
