@@ -2,4 +2,12 @@
 <input placeholder="请输入城市名" value="{{searchvalue}}" bindinput="bindKeyInput" />
 <button bindtap="search" class="search" >查询</button>
 <text>{{weatherData}}</text> 
+
+<swiper class="swiper" indicator-dots="{{indicatordots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}"> 
+  <block wx:key="key" wx:for="{{imgs}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
 </view>

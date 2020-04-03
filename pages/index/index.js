@@ -1,9 +1,20 @@
 // 引用百度地图微信小程序JSAPI模块 
+var app=getApp();
 var bmap = require('../../libs/bmap-wx.js'); 
 Page({ 
     data: { 
         weatherData: '', 
-        searchvalue:""//输入的内容
+        searchvalue:"",//输入的内容
+        imgs:['../src/caihong.jpg',
+        '../src/duoyun.jpg',
+        '../src/yin.jpg',
+        '../src/yu.jpg'],
+        indicatordots:true,
+        autoplay:true,
+        circular:true,
+        interval:5000,
+        duration:5000 
+
     }, 
     bindKeyInput:function(e){
      let value=e.detail.value;
